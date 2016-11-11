@@ -17,7 +17,7 @@ In `directory-require.rkt`:
 (require pollen-count)
 ```
 
-Elsewhere in `directory-require.rtk` define some tags:
+Elsewhere in `directory-require.rkt` define some tags:
 ```
 (define-countable-tag (section . xs) (0 number->string #f ".") (count)
   `(h2 ((id ,(symbol->string (gensym)))) ,count ". " ,@xs))
